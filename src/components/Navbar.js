@@ -27,7 +27,11 @@ const Navbar = () => {
           <img src={Logo} style={{ height: '43px' }} alt='Logo' />
         </div>
         <div style={{ marginTop: '17px' }}>
-          <Button variant='outlined' onClick={() => logout()} color='secondary'>
+          <Button
+            variant='outlined'
+            onClick={() => logout()}
+            style={{ color: '#2FD3CA' }}
+          >
             logout
           </Button>
         </div>

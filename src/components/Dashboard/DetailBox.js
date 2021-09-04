@@ -81,7 +81,12 @@ const InvoicePage = ({ id, heading, Icon, btn, link, numbers }) => {
           {id === 5 && <h4>{numbercomment}</h4>}
         </div>
         <div className={classes.btndiv}>
-          <Button className={classes.btn} variant='contained'>
+          <Button
+            component={Link}
+            to={link}
+            className={classes.btn}
+            variant='contained'
+          >
             {btn}
           </Button>
         </div>
