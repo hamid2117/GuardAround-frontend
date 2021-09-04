@@ -63,7 +63,7 @@ export const AuthProvider = ({ children }) => {
     try {
       dispatch({ type: TRUE_LOADING })
       const { data } = await axios.get(
-        'http://localhost:5000/api/v1/users',
+        'https://guardaround.herokuapp.com/api/v1/users',
         config
       )
       if (data) {
