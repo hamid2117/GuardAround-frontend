@@ -25,7 +25,9 @@ const InvoicePage = () => {
 
   const getData = async () => {
     try {
-      const { data } = await axios.get(`http://localhost:5000/api/v1/numbers`)
+      const { data } = await axios.get(
+        `https://guardaround.herokuapp.com/api/v1/numbers`
+      )
 
       if (data) {
         setNumbers(data)

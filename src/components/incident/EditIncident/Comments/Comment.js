@@ -19,7 +19,7 @@ const Comment = ({ text, user, _id, getComments }) => {
   const handleDelete = async () => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/v1/comment/${_id}`
+        `https://guardaround.herokuapp.com/api/v1/comment/${_id}`
       )
       if (response) {
         getComments()

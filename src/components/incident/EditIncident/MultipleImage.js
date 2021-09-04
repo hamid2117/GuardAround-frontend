@@ -22,11 +22,15 @@ const Multiple = ({ id }) => {
         console.log(values)
         console.log(data)
         axios
-          .post(`http://localhost:5000/api/v1/incidentimg/${id}`, data, {
-            headers: {
-              'Content-Type': 'multipart/form-data',
-            },
-          })
+          .post(
+            `https://guardaround.herokuapp.com/api/v1/incidentimg/${id}`,
+            data,
+            {
+              headers: {
+                'Content-Type': 'multipart/form-data',
+              },
+            }
+          )
           .then((response) => {
             console.log(response)
           })

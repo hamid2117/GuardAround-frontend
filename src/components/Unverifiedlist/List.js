@@ -33,7 +33,7 @@ const UserList = () => {
     try {
       setLoading(true)
       const { data } = await axios.get(
-        'http://localhost:5000/api/v1/unverifiedincidents',
+        'https://guardaround.herokuapp.com/api/v1/unverifiedincidents',
         config
       )
 
@@ -55,7 +55,7 @@ const UserList = () => {
 
     try {
       const { data: dataa } = await axios.put(
-        `http://localhost:5000/api/v1/editincident/${incidentId}`,
+        `https://guardaround.herokuapp.com/api/v1/editincident/${incidentId}`,
         data,
         config
       )
@@ -80,7 +80,7 @@ const UserList = () => {
     try {
       setLoading(true)
       const response = await axios.delete(
-        `http://localhost:5000/api/v1/incident/${id}`,
+        `https://guardaround.herokuapp.com/api/v1/incident/${id}`,
         config
       )
       if (response) {

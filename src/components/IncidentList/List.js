@@ -29,7 +29,7 @@ const UserList = () => {
     try {
       setLoading(true)
       const { data } = await axios.get(
-        'http://localhost:5000/api/v1/incidents',
+        'https://guardaround.herokuapp.com/api/v1/incidents',
         config
       )
 
@@ -51,7 +51,7 @@ const UserList = () => {
     try {
       setLoading(true)
       const response = await axios.delete(
-        `http://localhost:5000/api/v1/incident/${id}`,
+        `https://guardaround.herokuapp.com/api/v1/incident/${id}`,
         config
       )
       if (response) {

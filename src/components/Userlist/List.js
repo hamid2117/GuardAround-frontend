@@ -30,7 +30,7 @@ const UserList = () => {
     try {
       setLoading(true)
       const response = await axios.delete(
-        `http://localhost:5000/api/v1/user/${id}`,
+        `https://guardaround.herokuapp.com/api/v1/user/${id}`,
         config
       )
       if (response) {

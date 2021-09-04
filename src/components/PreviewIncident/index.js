@@ -38,7 +38,7 @@ const PreviewPage = () => {
   const getData = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/v1/incident/${id}`,
+        `https://guardaround.herokuapp.com/api/v1/incident/${id}`,
         config
       )
 

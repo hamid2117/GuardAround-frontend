@@ -32,7 +32,7 @@ const Formm = ({ config, id, setNewData }) => {
     const { ...data } = value
     try {
       const { data: dataa } = await axios.put(
-        `http://localhost:5000/api/v1/edituser/${id}`,
+        `https://guardaround.herokuapp.com/api/v1/edituser/${id}`,
         data,
         config
       )

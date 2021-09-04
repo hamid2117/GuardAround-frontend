@@ -52,7 +52,7 @@ export default function Login() {
 
     const data = { ...value, phone: code + number }
     const response = await axios
-      .post('http://localhost:5000/api/v1/user', data)
+      .post('https://guardaround.herokuapp.com/api/v1/user', data)
       .catch((e) => {
         if (e && e.response) {
           if (e.response.status === 400) {

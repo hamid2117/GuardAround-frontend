@@ -44,7 +44,7 @@ const User = () => {
   const getData = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/v1/incident/${id}`,
+        `https://guardaround.herokuapp.com/api/v1/incident/${id}`,
         config
       )
       if (data) {
@@ -61,7 +61,7 @@ const User = () => {
   const getLikes = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/v1/likes/${id}`,
+        `https://guardaround.herokuapp.com/api/v1/likes/${id}`,
         config
       )
       if (data) {
@@ -77,7 +77,7 @@ const User = () => {
   const getComments = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/v1/comments/${id}`,
+        `https://guardaround.herokuapp.com/api/v1/comments/${id}`,
         config
       )
       if (data) {

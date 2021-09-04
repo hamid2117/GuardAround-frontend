@@ -58,7 +58,7 @@ export default function Login() {
   const onSubmit = async (value) => {
     let { ...data } = value
     const response = await axios
-      .post('http://localhost:5000/api/v1/incident', data, config)
+      .post('https://guardaround.herokuapp.com/api/v1/incident', data, config)
       .catch((e) => {
         if (e && e.response) {
           if (e.response.status === 400) {

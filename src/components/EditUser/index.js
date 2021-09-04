@@ -41,7 +41,7 @@ const User = () => {
   const getData = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/v1/user/${id}`,
+        `https://guardaround.herokuapp.com/api/v1/user/${id}`,
         config
       )
       if (data) {
